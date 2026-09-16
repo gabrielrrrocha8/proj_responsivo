@@ -1,28 +1,28 @@
 /* reset.css — reduz os estilos padrão do navegador */
 
 * {
-  box-sizing: border-box; /* Faz padding e border entrarem no cálculo da largura e altura */
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0; /* Remove a margem padrão do navegador */
+  margin: 0;
 }
 
 h1, h2, h3, p, ul {
-  margin: 0; /* Remove as margens padrão dos títulos, parágrafos e listas */
-  padding: 0; /* Remove os espaçamentos padrão */
+  margin: 0;
+  padding: 0;
 }
 
 ul {
-  list-style: none; /* Remove as bolinhas das listas */
+  list-style: none;
 }
 
 a {
-  color: inherit; /* Faz o link herdar a cor do elemento ao redor */
-  text-decoration: none; /* Remove o sublinhado padrão */
+  color: inherit;
+  text-decoration: none;
 }
 
 img {
-  max-width: 100%; /* Impede que a imagem ultrapasse seu elemento pai */
-  display: block; /* Faz a imagem ocupar seu próprio espaço */
+  max-width: 100%;
+  display: block;
 }

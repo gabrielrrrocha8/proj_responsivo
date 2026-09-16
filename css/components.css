@@ -1,177 +1,178 @@
 /* components.css — estilos dos cartões e componentes */
 
 .cartao {
-  width: 100%; /* Faz cada cartão ocupar toda a largura do main */
-  padding: 2.5rem; /* Espaçamento interno dos cartões */
-  margin-bottom: 1.5rem; /* Espaço entre os cartões */
-  border: 1px solid #24477e; /* Borda azul discreta */
-  border-radius: 16px; /* Arredonda os cantos */
-  box-shadow: 0 8px 24px rgba(0, 0, 0, .25); /* Cria profundidade */
-  background: linear-gradient(135deg, #101f42, #0d1b38); /* Degradê azul-escuro */
+  width: 100%;
+  padding: 2.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #24477e;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .25); 
+  background: linear-gradient(135deg, #101f42, #0d1b38);
 }
 
-/* Primeiro cartão — divide texto e imagem lado a lado */
+/* Primeiro cartão — divide texto e imagem lado a lado*/
 
 .cartao-principal {
-  display: grid; /* Cria uma estrutura de colunas */
-  grid-template-columns: 1.05fr 1fr; /* Reserva espaço para texto e imagem */
-  gap: 2.5rem; /* Espaço entre as duas colunas */
-  align-items: center; /* Centraliza o conteúdo verticalmente */
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 2.5rem; 
+  align-items: center; 
 }
 
 .cartao h1 {
-  font-size: 2.4rem; /* Tamanho grande para o título principal */
-  margin-bottom: 1rem; /* Espaço abaixo do título */
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
 }
 
 .cartao h2 {
-  font-size: 2rem; /* Tamanho dos títulos das seções */
-  margin-bottom: 1.25rem; /* Espaço abaixo dos títulos */
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .cartao h3 {
-  font-size: 1.1rem; /* Tamanho dos títulos da programação */
-  margin-bottom: .35rem; /* Pequeno espaço abaixo do título */
+  font-size: 1.1rem; 
+  margin-bottom: .35rem; 
 }
 
 .descricao {
-  color: #9fb3df; /* Azul-claro usado nos textos secundários */
-  margin-bottom: 1.5rem; /* Espaço abaixo da descrição */
+  color: #9fb3df; 
+  margin-bottom: 1.5rem; 
 }
 
 .imagem-evento {
-  width: 100%; /* Faz a imagem ocupar toda a coluna */
-  aspect-ratio: 1 / 1; /* Mantém a imagem quadrada */
-  object-fit: cover; /* Preenche o espaço sem distorcer a imagem */
-  object-position: center; /* Centraliza o recorte da imagem */
-  border-radius: 12px; /* Arredonda os cantos da imagem */
-  border: 1px solid #24477e; /* Borda discreta na imagem */
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  object-fit: cover;
+  object-position: center; 
+  border-radius: 12px; 
+  border: 1px solid #24477e; 
 }
 
 .info {
-  display: flex; /* Organiza cada informação em linha */
-  flex-direction: column; /* Coloca as informações uma abaixo da outra */
-  gap: .75rem; /* Espaço entre as informações */
-  margin-bottom: 1.5rem; /* Espaço antes do botão */
+  display: flex; 
+  flex-direction: column;
+  gap: .75rem; 
+  margin-bottom: 1.5rem; 
 }
 
 .info li {
-  display: flex; /* Permite alinhar ícone e texto */
-  align-items: center; /* Centraliza os elementos verticalmente */
-  gap: .7rem; /* Espaço entre ícone e texto */
-  color: #9fb3df; /* Cor das informações */
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  color: #9fb3df; 
 }
 
 .info strong {
-  color: #f5f3ee; /* Destaca Data, Horário e Local */
+  color: #f5f3ee;
 }
 
 .icone {
-  width: 1.8rem; /* Reserva espaço para o ícone */
-  color: #ffad3d; /* Usa o laranja da referência */
-  font-size: 1.35rem; /* Aumenta o tamanho do ícone */
-  text-align: center; /* Centraliza o símbolo */
+  width: 1.8rem;
+  color: #ffad3d;
+  font-size: 1.35rem;
+  text-align: center;
 }
 
 .botao {
-  display: inline-block; /* Permite definir padding e tamanho */
-  padding: .75em 1.5em; /* Espaçamento interno usando em */
-  background: #ffad3d; /* Fundo laranja */
-  color: #101626; /* Texto escuro */
-  font-weight: bold; /* Deixa o texto destacado */
-  border-radius: 8px; /* Arredonda o botão */
-  transition: transform .2s, opacity .2s; /* Suaviza o efeito ao passar o mouse */
+  display: inline-block;
+  padding: .75em 1.5em; 
+  background: #ffad3d; 
+  color: #101626; 
+  font-weight: bold;
+  border-radius: 8px;
+  transition: transform .2s, opacity .2s; 
 }
 
+
 .botao:hover {
-  transform: translateY(-2px); /* Levanta levemente o botão */
-  opacity: .92; /* Reduz um pouco a intensidade */
+  transform: translateY(-2px);
+  opacity: .92;
 }
 
 .programacao li {
-  margin-bottom: 1.5rem; /* Espaço entre os itens da programação */
+  margin-bottom: 1.5rem;
 }
 
 .programacao li:last-child {
-  margin-bottom: 0; /* Remove o espaço depois do último item */
+  margin-bottom: 0;
 }
 
 .horario {
-  color: #ffad3d; /* Destaca os horários em laranja */
-  font-weight: bold; /* Deixa os horários em negrito */
-  font-size: 1.25rem; /* Aumenta os horários */
-  margin-bottom: .25rem; /* Espaço pequeno abaixo do horário */
+  color: #ffad3d;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: .25rem;
 }
 
 .programacao p:not(.horario) {
-  color: #9fb3df; /* Deixa as descrições em azul-claro */
+  color: #9fb3df;
 }
 
 .premios li {
-  display: flex; /* Organiza o símbolo e o texto na mesma linha */
-  align-items: flex-start; /* Alinha o conteúdo pelo topo */
-  gap: .7rem; /* Espaço entre símbolo e texto */
-  margin-bottom: 1rem; /* Espaço entre os prêmios */
-  color: #9fb3df; /* Cor dos textos */
+  display: flex;
+  align-items: flex-start;
+  gap: .7rem;
+  margin-bottom: 1rem;
+  color: #9fb3df;
 }
 
 .premios li:last-child {
-  margin-bottom: 0; /* Remove o espaço depois do último prêmio */
+  margin-bottom: 0;
 }
 
 .premio-icone {
-  color: #ffad3d; /* Deixa os símbolos dos prêmios em laranja */
-  font-size: 1.25rem; /* Define o tamanho dos símbolos */
-  min-width: 1.5rem; /* Mantém o alinhamento dos itens */
+  color: #ffad3d;
+  font-size: 1.25rem;
+  min-width: 1.5rem;
 }
 
 .premios strong {
-  color: #f5f3ee; /* Destaca o nome de cada prêmio */
+  color: #f5f3ee;
 }
 
 .rodape {
-  color: #8fa6d5; /* Cor discreta para o rodapé */
-  font-size: .9rem; /* Texto menor */
-  text-align: center; /* Centraliza o rodapé */
-  padding: .5rem 1rem; /* Cria um pequeno espaço ao redor */
+  color: #8fa6d5;
+  font-size: .9rem;
+  text-align: center;
+  padding: .5rem 1rem;
 }
 
 /* Ajustes para telas pequenas */
 
 @media (max-width: 700px) {
   body {
-    padding: 1.25rem 0; /* Reduz o espaço externo em telas pequenas */
+    padding: 1.25rem 0;
   }
 
   .cartao {
-    padding: 1.5rem; /* Reduz o padding para caber melhor no celular */
+    padding: 1.5rem;
   }
 
   .cartao-principal {
-    grid-template-columns: 1fr; /* Coloca texto e imagem um abaixo do outro */
-    gap: 1.5rem; /* Reduz o espaço entre os elementos */
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .cartao h1 {
-    font-size: 2rem; /* Reduz o título principal */
+    font-size: 2rem;
   }
 
   .cartao h2 {
-    font-size: 1.7rem; /* Reduz os títulos das seções */
+    font-size: 1.7rem; 
   }
 }
 
 @media (max-width: 360px) {
   .cartao {
-    padding: 1rem; /* Garante espaço adequado em telas de 320px */
+    padding: 1rem;
   }
 
   .cartao h1 {
-    font-size: 1.8rem; /* Evita que o título fique grande demais */
+    font-size: 1.8rem;
   }
 
   .botao {
-    width: 100%; /* Faz o botão caber confortavelmente na tela */
-    text-align: center; /* Centraliza o texto do botão */
+    width: 100%;
+    text-align: center;
   }
 }
